@@ -45,7 +45,7 @@ public class MemoryMemberRepositoryTest {
         member1.setName("한솔1");
         repository.save(member1);
 
-        Member member2 = new Member();  //shifh + F6 => 해당하는 변수 이름 한번에 수정
+        Member member2 = new Member();  //shift + F6 => 해당하는 변수 이름 한번에 수정
         member2.setName("한솔2");
         repository.save(member2);
 
@@ -67,8 +67,4 @@ public class MemoryMemberRepositoryTest {
         List<Member> result = repository.findAll();
         assertThat(result.size()).isEqualTo(2);
     }
-
-
-
-
 }
